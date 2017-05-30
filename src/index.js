@@ -53,7 +53,7 @@ var handlers = {
         var factIndex = Math.floor(Math.random() * factArr.length);
         var randomFact = factArr[factIndex];
         var speechOutput = GET_FACT_MESSAGE + randomFact;
-        this.emit(':tellWithCard', speechOutput, SKILL_NAME, randomFact)
+        this.emit(':tellWithCard', speechOutput, SKILL_NAME, randomFact);
     },
     'AMAZON.HelpIntent': function () {
         var speechOutput = HELP_MESSAGE;
